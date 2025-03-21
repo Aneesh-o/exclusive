@@ -13,7 +13,8 @@ function App() {
         <Route path="/add-product" element={<AddProduct />} />
 
         {/* Route for editing an existing product (with ID in URL) */}
-        <Route path="/edit-product/:id" element={<AddProduct />} />      </Routes>
+        <Route path="/edit-product/:id" element={<AddProduct />} />
+      </Routes>
     </>
   )
 }
