@@ -1,0 +1,172 @@
+// Variables
+$primary-color: #333;
+$accent-color: #e44d26;
+$light-gray: #f8f8f8;
+$dark-gray: #666;
+$star-color: #f39c12;
+$border-radius: 8px;
+$shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+.productCard {
+    width: 100%;
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    padding-top: 10px;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Icons (Favorite & View)
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .icon {
+        background: white;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: $shadow;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background: $accent-color;
+            color: white;
+        }
+    }
+}
+
+// Product Image
+.productImage {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $light-gray;
+    border-radius: 4px;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+// Product Info
+.productInfo {
+    margin-top: 12px;
+}
+
+.category {
+    font-size: 12px;
+    color: $dark-gray;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+// Description
+.description {
+    font-size: 14px;
+    color: $dark-gray;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+// Price
+.priceContainer {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+
+    .price {
+        color: $accent-color;
+    }
+}
+
+// Star Rating
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 4px;
+
+    .filledStar {
+        color: $star-color;
+    }
+
+    .reviewCount {
+        font-size: 12px;
+        color: $dark-gray;
+        margin-left: 4px;
+    }
+}
+
+// Add to Cart Button
+.addToCart {
+    width: 100%;
+    margin-top: 12px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: $accent-color;
+    }
+}
+
+.actionsContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.optionsDropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    button {
+        background: none;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+
+        &:hover {
+            background: #f8f8f8;
+        }
+    }
+}
