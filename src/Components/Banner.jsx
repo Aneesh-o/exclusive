@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <Container className={styles.banner - Container}>
+        <Container style={{paddingTop:"340px"}} className={styles.banner - Container}>
             <div className={styles['hero-banner']}>
                 <div className={styles['hero-content']}>
                     <div className={styles['hero-brand']}>
