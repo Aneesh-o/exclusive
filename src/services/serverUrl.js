@@ -1,2 +1,2 @@
-const serverUrl = "http://localhost:3000"
+const serverUrl = "https://exclusive-server.onrender.com"
 export default serverUrl
